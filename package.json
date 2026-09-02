@@ -1,0 +1,31 @@
+{
+  "name": "remotion-playground",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remotion video creation playground",
+  "scripts": {
+    "dev": "remotion studio",
+    "studio": "remotion studio",
+    "render": "remotion render",
+    "render:hello": "remotion render HelloWorld out/hello-world.mp4",
+    "render:promo": "remotion render ProductPromo out/product-promo.mp4",
+    "render:physics": "remotion render PhysicsLecture out/physics-lecture.mp4",
+    "still": "remotion still",
+    "bundle": "remotion bundle",
+    "typecheck": "tsc --noEmit",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.520",
+    "@remotion/zod-types": "4.0.520",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "remotion": "4.0.520",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "typescript": "^5.9.0"
+  }
+}
