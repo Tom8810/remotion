@@ -5,3 +5,7 @@ build/
 .env.local
 .DS_Store
 *.log
+
+# 生成物と元素材（大きいのでコミットしない）
+public/clips/
+assets/source/
