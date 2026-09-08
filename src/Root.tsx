@@ -18,6 +18,8 @@ import {
   productPromoSchema,
 } from './compositions/ProductPromo/schema'
 import { calculateTotalDuration } from './compositions/ProductPromo/timing'
+import { TraceityPromo } from './compositions/TraceityPromo/TraceityPromo'
+import { TOTAL_DURATION as TRACEITY_DURATION } from './compositions/TraceityPromo/timing'
 
 /**
  * Studio / CLI から見えるコンポジションの一覧。
@@ -25,6 +27,15 @@ import { calculateTotalDuration } from './compositions/ProductPromo/timing'
  */
 export const RemotionRoot: React.FC = () => (
   <>
+    <Composition
+      id="TraceityPromo"
+      component={TraceityPromo}
+      durationInFrames={TRACEITY_DURATION}
+      fps={FPS}
+      width={DIMENSIONS.landscape.width}
+      height={DIMENSIONS.landscape.height}
+    />
+
     <Composition
       id="HelloWorld"
       component={HelloWorld}

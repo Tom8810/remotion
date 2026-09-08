@@ -13,10 +13,13 @@
     "still": "remotion still",
     "bundle": "remotion bundle",
     "typecheck": "tsc --noEmit",
-    "upgrade": "remotion upgrade"
+    "upgrade": "remotion upgrade",
+    "clips": "bash scripts/extract-clips.sh",
+    "render:traceity": "remotion render TraceityPromo out/traceity-promo.mp4 --muted"
   },
   "dependencies": {
     "@remotion/cli": "4.0.520",
+    "@remotion/google-fonts": "^4.0.520",
     "@remotion/zod-types": "4.0.520",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
